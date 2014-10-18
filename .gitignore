@@ -1,0 +1,235 @@
+
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta http-equiv="Content-Language" content="tr" />
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0" />
+<meta name="ProgId" content="FrontPage.Editor.Document" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<title>Yaşadığımı Hesapla</title>
+<link rel="stylesheet" type="text/css" href="../bweb.css" />
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!--
+var acc=0
+var show_time=false;
+var timerID=null;
+var blank=":";
+function stopit() {
+if (show_time)
+clearTimeout(timerID);
+show_time=false;
+}
+function startit(form) {
+var today=new Date();
+var curyear=today.getYear()
+if (curyear < 1000)
+curyear+=1900
+var acc1=acc;
+var display_value =" Time:  " + curyear
+if (today.getMinutes() < 10) {
+display_value+=":0" + today.getMinutes();
+}
+else {
+display_value+=":" + today.getMinutes();
+}
+if (today.getSeconds() < 10){
+display_value+=":0" + today.getSeconds();
+}
+else {
+display_value+=":" + today.getSeconds();
+}
+if
+(today.getHours()>=12) {
+display_value+=" P.M.  "
+}
+else {
+display_value+=" A.M.  "
+}
+display_value += " Date:  " + (today.getMonth()+1) + "/" + today.getDate() + "/" + curyear; 
+window.status=display_value; 
+writeyourAge(acc1) 
+timerID=setTimeout("startit()",100); 
+show_time=true;
+}
+function writeyourAge(onval) {
+if (onval == 0) {
+normal()
+} else {
+accurate()
+   }
+}
+function normal() {                             
+TheDate = new Date();                     
+Month = TheDate.getMonth();              
+Day = TheDate.getDate();                 
+Year = TheDate.getYear();
+if (Year< 1000)
+Year+=1900
+Hour = TheDate.getHours();
+Minute = TheDate.getMinutes();
+Second = TheDate.getSeconds();   
+by = (document.my_age.birthy.value);
+bm = (document.my_age.birthm.value);
+bd = (document.my_age.birthd.value);
+bh = (document.my_age.birthh.value);
+bmn = (document.my_age.birthmin.value);
+bs = (document.my_age.births.value);
+BDate = Date.UTC(by,bm,bd,bh,bmn,bs);
+if (Year<2000) {              
+CDate = Date.UTC(Year,Month,Day,Hour,Minute,Second);
+} else {
+CDate = Date.UTC(Year,Month,Day,Hour,Minute,Second);
+}
+Age = CDate-BDate + (1000*60*60*24*30); document.my_age.yrs.value = parseInt(((((Age/1000)/60)/60)/24)/365.25,10); document.my_age.dys.value = parseInt((((Age/1000)/60)/60)/24,10); document.my_age.hrs.value = parseInt(((Age/1000)/60)/60,10); document.my_age.mins.value = parseInt((Age/1000)/60,10); document.my_age.secs.value = parseInt(Age/1000,10);
+}
+function accurate() {
+TheDate = new Date();                     
+Month = TheDate.getMonth();                
+Day = TheDate.getDate();                  
+Year = TheDate.getYear();
+if (Year< 1000)
+Year+=1900
+Hour = TheDate.getHours();
+Minute = TheDate.getMinutes();
+Second = TheDate.getSeconds();           
+by = (document.my_age.birthy.value);
+bm = (document.my_age.birthm.value);
+bd = (document.my_age.birthd.value);
+bh = (document.my_age.birthh.value);
+bmn = (document.my_age.birthmin.value);
+bs = (document.my_age.births.value);
+BDate = Date.UTC(by,bm,bd,bh,bmn,bs);
+if (Year<2000) {              
+CDate = Date.UTC(Year,Month,Day,Hour,Minute,Second);
+} else {
+CDate = Date.UTC(Year,Month,Day,Hour,Minute,Second);
+}
+Age = CDate-BDate + (1000*60*60*24*30); document.my_age.yrs.value = ((((Age/1000)/60)/60)/24)/365.25; document.my_age.dys.value = (((Age/1000)/60)/60)/24; document.my_age.hrs.value = ((Age/1000)/60)/60; document.my_age.mins.value = (Age/1000)/60; document.my_age.secs.value = Age/1000;
+}
+//-->
+</SCRIPT>
+<style fprolloverstyle>A:hover {color: red; font-weight: bold}
+</style>
+<meta name="Microsoft Border" content="tl">
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" link="#8A0000" vlink="#8A0000" alink="#8A0000"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td>
+<table border="1" cellpadding="0" cellspacing="0" style="border-width: 0" bordercolor="#fdfdfd" width="0%" id="AutoNumber1">
+	
+
+</td></tr><!--msnavigation--></table><!--msnavigation--><table dir="ltr" border="0" cellpadding="0" cellspacing="0" width="25%"><tr><td valign="top" width="1%">
+<table border="1" cellpadding="0" cellspacing="0" style="border-width: 0" bordercolor="#3bcefa" width="350" id="AutoNumber16">
+	<tr>
+		<td width="0%" style="border-style: none; border-width: medium">
+		<p style="margin-top: 0; margin-bottom: 0">&nbsp;</td>
+		<td width="100%" style="border-style: a double border; border-width: medium">
+		<p align="center" style="margin-bottom: 4px">
+		<font size="2" face="Verdana" color="#f02525">
+		
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var X_now = new Date();
+var X_days = new Array('Pazar','Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi');
+var X_months = new Array('Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık');
+var X_date = ((X_now.getDate()<10) ? "0" : "")+ X_now.getDate();
+
+function fourdigits(number)    {
+   return (number < 1000) ? number + 1900 : number;
+                               }
+
+X_today =  X_date + " " +
+              X_months[X_now.getMonth()] + " " +
+               (fourdigits(X_now.getYear())) + ", " +
+                X_days[X_now.getDay()] + " " 
+
+
+document.write(X_today);
+//  End -->
+</script>
+					
+		</font></p>
+		<table border="1" width="100%" id="table40" style="border-width: 10px">
+			<tr>
+				<td style="border-left-style: none; border-left-width: medium; border-right-style: none; border-right-width: medium; border-top-style: double; border-top-width: 3px; border-bottom-style: double; border-bottom-width: 5px" bgcolor="#88f26f" bordercolor="#52c972">
+				<p style="margin-center: 6px"><b><font size="3" face="Verdana">
+				
+
+		Ýaşyňyzy we ýaşan wagtyňyzy hasaplayyjy
+<form name="my_age">
+<div align="left">
+<table width="100%" border=0 cellspacing=0 cellpadding=2>
+<tr>
+<td align=center colspan=5>
+<p align="left"><font size="2"><b>Dogulan wagtyňyz</b><br>
+Ýyl</font><font face="Verdana">:<input name="birthy" type="text" size=4></font><font size="2"> 
+Ay:</font><font face="Verdana"><input name="birthm" type="text" size=2></font><font size="2">
+Gün:</font><font face="Verdana"><input name="birthd" type="text" size=2></font><font size="2"><br> 
+Sagat:</font><font face="Verdana"><input name="birthh" type="text" size=2></font><font size="2">
+Minut:</font><font face="Verdana"><input name="birthmin" type="text" size=2></font><font size="2"> 
+Sekunt:</font><font face="Verdana"><input name="births" type="text" size=2></font><font size="2">
+</font>  
+</td>
+</tr>
+<tr>
+<td align=center colspan=5>
+<p align="left"><font face="Verdana"><font size="2">Anyk</font><input type="radio" name="accurate" value="ON" onClick="if (this.checked) {acc=1}"></font><font size="2">
+Ady san</font><font face="Verdana"><input type="radio" name="accurate" Value="OFF" onClick="if (this.checked) {acc=0}" checked></font><font size="2">
+</font>
+<input type="button" name="norm" value="Başla" onclick="startit()" style="font-family: Verdana; font-size: 10pt; font-weight: bold">
+<input type="button" name="norm" value="Dur" onclick="stopit()" style="font-family: Verdana; font-size: 10pt; color: #FF0000; font-weight: bold">
+</td></tr>
+
+<tr>                       
+<td width=13 align="right"></td>
+<td width=100><font size="2">Men...</font></td>
+<td width=200 align=center><font face="Verdana">
+<input type="text" name="yrs" size=15></font></td>
+<td width=340 align=left>  <font size="2">...ýaşymda</font></td>
+</tr>
+<tr>
+<td align="right"><font color="#88f26f" size="2">.</td>
+<td><font size="2">Ýada...</font></td>
+<td align=center><font face="Verdana"><input type="text" name="dys" size=15></font></td>
+<td align=left>  <font size="2">...günlük</font></td>
+</tr>
+<tr>
+<td align="right"><font color="#88f26f" size="2">.</td>
+<td><font size="2">Ýada...</font></td>
+<td align=center><font face="Verdana"><input type="text" name="hrs" size=15></font></td>
+<td align=left>  <font size="2">...sagatlyk</font></td>
+</tr>
+<tr>
+<td align="right"><font color="#88f26f" size="2">.</td>
+<td><font size="2">Ýada...</font></td>
+<td align=center><font face="Verdana"><input type="text" name="mins" size=15></font></td>
+<td align=left>  <font size="2">...Minutlyk</font></td>
+</tr>
+<tr>
+<td align="center"><font color="#88f26f" size="2">.</td>
+<td><font size="2">Ýada...</font></td>
+<td align=center><font face="Verdana"><input type="text" name="secs" size=15></font></td>
+<td align=left>  <font size="2">...sekuntlyk</font></td>
+</tr>
+</table>
+</div>
+</form>
+                    <pre>
+                    
+         
+     
+     
+     
+                
+                
+                    
+</pre>
+                
+
+<p align="center" style="margin-top: 30; margin-bottom: 0"><font face="arial" size="-1">Guwanç Sopyýew</font><br>
+<font face="arial, helvetica" size="-1">tarapyndan döredildi
+</p>
+<!--msnavigation--></td></tr><!--msnavigation--></table></body></html>
